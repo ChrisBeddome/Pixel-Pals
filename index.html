@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="keywords" content="Pixel, Pals, PixelPals, MMO, social, friends,">
+	<title>PixelPals</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="styles/login.css" />
+	<link rel="stylesheet" href="styles/search.css" />
+	<link rel="stylesheet" href="styles/characters.css" />
+	<link rel="stylesheet" href="styles/inbox.css" />
+	<link href="https://fonts.googleapis.com/css?family=Teko|Telex" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header id="navbar">
+		<img id="mainLogo" src="images/logo.png" alt="Pixel Pals Logo" />
+		<div id="menuButton"><img src="images/hamburger-icon.png" alt=""></div>
+		<ul class="menuHide">
+			<div id="navHighlighter"></div>
+			<li class="navButton"></li>
+			<li class="navButton">Characters</li>
+			<li class="navButton">Search</li>
+			<li class="navButton">Inbox</li>
+			<li id="logoutButton">Logout</li>
+		</ul>
+	</header>
+
+	<div id="container1">
+
+		<div class="page" id="loginPage">
+
+			<div id="loginForm" class="loginPageForm">
+				<img src="images/logo-large.png" alt="Pixel Pals Logo" />
+				<input id="loginUsernameField" type="text" placeholder="email">
+				<input id="loginPasswordField" type="password" placeholder="password">
+				<button id="loginButton">Log in</button>
+				<div id="switchToRegister" class="loginSwap">Don't have an Account? Click here to Register</div>
+			</div>
+
+			<div id="registerForm" class="loginPageForm">
+				<img src="images/logo-large.png" alt="Pixel Pals Logo" />
+				<input id="registerUsername" type="text" placeholder="username">
+				<input id="registerEmail" type="text" placeholder="email">
+				<input id="registerPassword" type="password" placeholder="password">
+				<input id="registerPassword2" type="password" placeholder="repeat password">
+				<button id="registerButton">Register</button>
+				<div id="switchToLogin" class="loginSwap">Already have an account? Click here to Log in</div>
+			</div>
+
+			<div id="loginErrorDisplay" class="errorDisplay"></div>
+		</div>
+	</div>
+
+	<div id="container2"></div>
+
+	<div id="hiddenContainer">
+
+		<div class="page" id="characterPage">
+
+			<div id="userCharacters">
+				<h2>My Characters</h2>
+
+				<div class="tableWrapper">
+					<table id="userCharacterTable"></table>
+				</div>
+
+				<div id="addControls">
+					<input id="addCharName" type="text" placeholder="Character name">
+					<select id="addGameName">
+					<option value="" disabled selected>Select a game</option>
+				</select>
+					<select id="addServerName">
+					<option value="" disabled selected>Select a server</option>
+				</select>
+					<button id="addButton">Add Character</button>
+				</div>
+
+				<div id="characterErrorDisplay" class="errorDisplay"></div>
+
+			</div>
+
+		</div>
+
+		<div class="page" id="searchPage">
+
+			<h2>Search</h2>
+
+			<div id="searchControls">
+
+				<input id="charName" type="text" placeholder="Character name">
+				<select id="gameName">
+					<option value="" disabled selected>Select a game</option>
+				</select>
+				<select id="serverName">
+					<option value="" disabled selected>Select a server</option>
+				</select>
+				<button id="searchButton">Search</button>
+			</div>
+			<div id="searchErrorDisplay" class="errorDisplay"></div>
+
+			<div class="tableWrapper">
+				<table id="characterTable"></table>
+			</div>
+
+		</div>
+
+		<div class="page" id="inboxPage">
+			<h2>Messages</h2>
+			<div id="messageSelect">
+				<table id="messageTable"></table>
+			</div>
+
+			<div id="receivedMessage">
+				<div id="messageContent"></div>
+				<div id="replyButton">
+					<h3>Reply</h3>
+				</div>
+			</div>
+			<div id="inboxErrorDisplay" class="errorDisplay"></div>
+		</div>
+
+	</div>
+
+	<footer id="footer">
+		<p>&copy; PixelPals inc 2017</p>
+	</footer>
+
+	<div id="sendMessage">
+		<div class="messageHeader">
+			<h3></h3>
+			<div class="closeMessage">X</div>
+		</div>
+		<textarea class="sendMessageContent" id="sendMessageContent"> </textarea>
+		<div class="sendButton" id="sendButton">
+			<h3>Send</h3>
+		</div>
+	</div>
+
+	<div id="blockOverlay"></div>
+
+	<script src="javascript/ajax.js" type="text/javascript"></script>
+	<script src="javascript/login.js" type="text/javascript"></script>
+	<script src="javascript/search.js" type="text/javascript"></script>
+	<script src="javascript/view.js" type="text/javascript"></script>
+	<script src="javascript/characters.js" type="text/javascript"></script>
+	<script src="javascript/inbox.js" type="text/javascript"></script>
+	<script src="javascript/init.js" type="text/javascript"></script>
+
+</body>
+
+</html>

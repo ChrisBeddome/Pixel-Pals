@@ -1,0 +1,164 @@
+/* Main Container */
+
+#searchPage {
+	margin: auto;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#searchPage h2 {
+	background-color: rgba(30, 30, 30, 0.8);
+	padding: 20px 0px 20px 0px;
+	max-width: 840px;
+	margin: auto;
+	box-shadow: 0px 0px 10px #000;
+}
+
+
+/* Search Controls */
+
+#searchPage #searchControls {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#searchPage #charName,
+#searchPage #serverName,
+#searchPage #gameName {
+	width: 196px;
+	height: 30px;
+	color: #e5e5e5;
+	padding-left: 4px;
+	margin: 0 5px;
+	background-color: #222;
+	box-shadow: inset 1px 1px 5px #111;
+	border: none;
+	font-size: 20px;
+	font-family: 'Teko', sans-serif;
+}
+
+#searchPage #gameName {
+	height: 32px;
+	width: 200px;
+}
+
+#searchPage #serverName {
+	height: 32px;
+	width: 200px;
+}
+
+#searchPage #charName:focus,
+#searchPage #gameName:focus,
+#searchPage #serverName:focus,
+#searchPage #searchButton:focus {
+	outline: none;
+}
+
+#searchPage #searchButton {
+	display: block;
+	width: 625px;
+	margin: auto;
+	margin-top: 10px;
+	height: 30px;
+	color: #e5e5e5;
+	background-color: #222;
+	border: none;
+	font-size: 20px;
+	font-family: 'Teko', sans-serif;
+	box-shadow: 1px 1px 3px #111;
+	transition: all 0.1s;
+	cursor: pointer;
+}
+
+#searchPage #searchButton:hover {
+	background-color: #67FF7C;
+	background: -webkit-linear-gradient(left, #67FF7C, #99FFA6, #67FF7C);
+	background: -o-linear-gradient(left, #67FF7C, #99FFA6, #67FF7C);
+	background: linear-gradient(to right, #67FF7C 10%, #99FFA6 90%, #67FF7C 100%);
+	color: #222;
+}
+
+
+/* Character Table */
+
+#searchPage #characterTable {
+	margin: auto;
+	font-size: 20px;
+	border-spacing: 0 1px;
+	text-align: left;
+}
+
+#searchPage #characterTable td {
+	width: 200px;
+	padding: 5px 0px 5px 10px;
+}
+
+#searchPage #characterTable tr {
+	background-color: #222;
+	color: #e5e5e5;
+}
+
+#searchPage #characterTable tr:not(:first-child) {
+	cursor: pointer;
+}
+
+#searchPage #characterTable tr:nth-child(even) {
+	background-color: #252525;
+}
+
+#searchPage #characterTable tr:not(:first-child):hover {
+	background-color: #67FF7C;
+	background: -webkit-linear-gradient(left, #67FF7C 10%, #99FFA6 90%, #67FF7C 100%);
+	background: -o-linear-gradient(left, #67FF7C 10%, #99FFA6 90%, #67FF7C 100%);
+	background: linear-gradient(to right, #67FF7C 10%, #99FFA6 90%, #67FF7C 100%);
+	color: #222;
+	-webkit-transform: scale(1, 1.05);
+	-ms-transform: scale(1, 1.05);
+	transform: scale(1, 1.05);
+}
+
+#searchPage #characterTable th {
+	text-align: left;
+	padding-left: 10px;
+	font-size: 26px;
+	background-color: #1b1b1b;
+}
+
+
+#searchPage .tableWrapper {
+	max-height: 520px;
+	overflow-y: auto;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#searchErrorDisplay {
+	width: 382px;
+	margin: auto;
+	margin-top: 10px;
+	width: 600px;
+}
+
+
+/***********Small Screens**********/
+
+@media (max-width: 865px) {
+	
+		#searchPage {
+			margin-top: 0px;
+		}
+	
+		#searchPage h2 {
+			background-color: #222;
+			padding: 20px 0px 20px 0px;
+			box-shadow: none;
+			max-width: 100%;
+		}
+
+		#searchPage .tableWrapper {
+			max-height: none;
+		}
+	}
+	
+	
+	

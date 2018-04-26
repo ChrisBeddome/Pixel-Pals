@@ -1,0 +1,167 @@
+#characterPage {
+	margin: auto;
+	margin-top: 40px;
+}
+
+#userCharacters h2 {
+	background-color: rgba(30, 30, 30, 0.8);
+	padding: 20px 0px 20px 0px;
+	max-width: 692px;
+	margin: auto;
+	box-shadow: 0px 0px 10px #000;
+}
+
+#userCharacters {
+	text-align: center;
+}
+
+/* user character table */
+
+#characterPage .tableWrapper {
+	max-height: 480px;
+	overflow-y: auto;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+
+#characterPage #userCharacterTable {
+	margin: auto;
+	font-size: 20px;
+	border-spacing: 0 1px;
+	text-align: left;
+}
+
+#characterPage #userCharacterTable td {
+	width: 200px;
+	padding: 5px 0px 5px 10px;
+}
+
+#characterPage #userCharacterTable tr {
+	background-color: #222;
+	color: #e5e5e5;
+}
+
+
+#characterPage #userCharacterTable tr:nth-child(even) {
+	background-color: #252525;
+}
+
+
+#characterPage #userCharacterTable th {
+	text-align: left;
+	padding-left: 10px;
+	font-size: 26px;
+	background-color: #1b1b1b;
+}
+
+#characterPage #userCharacterTable td:nth-child(4) {
+	width: 50px;
+	color: #FF6767;
+	cursor: pointer;
+}
+
+#characterPage #userCharacterTable th:nth-child(4) {
+	width: 50px;
+}
+
+
+
+
+/* add character */
+
+#characterPage #addControls {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#characterPage #addControls h2 {
+	margin-bottom: 10px;
+}
+
+#characterPage #addCharName,
+#characterPage #addServerName,
+#characterPage #addGameName {
+	width: 196px;
+	height: 30px;
+	color: #e5e5e5;
+	padding-left: 4px;
+	margin: 0 5px;
+	background-color: #222;
+	box-shadow: inset 1px 1px 5px #111;
+	border: none;
+	font-size: 20px;
+	font-family: 'Teko', sans-serif;
+}
+
+#characterPage #addGameName {
+	height: 32px;
+	width: 200px;
+}
+
+#characterPage #addGerverName {
+	height: 32px;
+	width: 200px;
+}
+
+#characterPage #addCharName:focus,
+#characterPage #addGameName:focus,
+#characterPage #addServerName:focus,
+#characterPage #addButton:focus {
+	outline: none;
+}
+
+#characterPage #addButton {
+	display: block;
+	width: 618px;
+	margin: auto;
+	margin-top: 10px;
+	height: 30px;
+	color: #e5e5e5;
+	background-color: #222;
+	border: none;
+	font-size: 20px;
+	font-family: 'Teko', sans-serif;
+	box-shadow: 1px 1px 3px #111;
+	transition: all 0.1s;
+	cursor: pointer;
+}
+
+#characterPage #addButton:hover {
+	background-color: #67FF7C;
+	background: -webkit-linear-gradient(left, #67FF7C 10%, #99FFA6 90%, #67FF7C 100%);
+	background: -o-linear-gradient(left, #67FF7C 10%, #99FFA6 90%, #67FF7C 100%);
+	background: linear-gradient(to right, #67FF7C 10%, #99FFA6 90%, #67FF7C 100%);
+	color: #222;
+}
+
+#characterErrorDisplay {
+	width: 382px;
+	margin: auto;
+	margin-top: 10px;
+	width: 598px;
+}
+
+
+/***********Small Screens**********/
+
+@media (max-width: 865px) {
+
+	#characterPage {
+		margin-top: 0px;
+	}
+
+	#userCharacters h2 {
+		background-color: #222;
+		padding: 20px 0px 20px 0px;
+		box-shadow: none;
+		max-width: 100%;
+	}
+
+	#characterPage .tableWrapper {
+		max-height: none;
+		margin-top: 0px;
+	}
+}
+
+
